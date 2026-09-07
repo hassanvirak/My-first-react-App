@@ -264,18 +264,34 @@
 
 // export default App
 
-import NameInput from "./components/NameInput";
+// import NameInput from "./components/NameInput";
 
-function App(){
-  return(
+// function App(){
+//   return(
+//     <div>
+//       <h1>Event Handling Demo</h1>
+//       <NameInput/>
+//     </div>
+//   )
+// }
+
+// export default App
+import NameInput from "./components/NameInput";
+import Counter from "./components/Counter";
+import UserForm from "./components/Userform";
+
+function App() {
+  return (
     <div>
       <h1>Event Handling Demo</h1>
-      <NameInput/>
+      <NameInput />
+      <Counter />
+      <UserForm />
     </div>
   )
 }
 
-export default App
+export default App;
 
 
 
