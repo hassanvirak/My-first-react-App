@@ -279,6 +279,8 @@
 import NameInput from "./components/NameInput";
 import Counter from "./components/Counter";
 import UserForm from "./components/Userform";
+import HoverMessage from "./components/HoverMessage";
+import KeyPress from "./components/KeyPress";
 
 function App() {
   return (
@@ -287,6 +289,8 @@ function App() {
       <NameInput />
       <Counter />
       <UserForm />
+      <HoverMessage />
+      <KeyPress />
     </div>
   )
 }
