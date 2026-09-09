@@ -7,17 +7,10 @@ function KeyPress(){
     const[PressedKey, setPressedKey] = useState('');
 
     //Runs whenever a key is pressed down
-    // function handleKeyDown(event){
-    //     //even.key contains the key name
-    //     setPressedKey(event.key);
-    // }
     function handleKeyDown(event){
-    if(event.target.value.length >= 1){
-        event.preventDefault();
+        //even.key contains the key name
+        setPressedKey(event.key);
     }
-}
-
-
 
     return(
     <div>
