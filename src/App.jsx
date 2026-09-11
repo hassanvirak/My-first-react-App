@@ -276,27 +276,47 @@
 // }
 
 // export default App
-import NameInput from "./components/NameInput";
-import Counter from "./components/Counter";
-import UserForm from "./components/Userform";
-import HoverMessage from "./components/HoverMessage";
-import KeyPress from "./components/KeyPress";
+// import NameInput from "./components/NameInput";
+// import Counter from "./components/Counter";
+// import UserForm from "./components/Userform";
+// import HoverMessage from "./components/HoverMessage";
+// import KeyPress from "./components/KeyPress";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>Event Handling Demo</h1>
+//       <NameInput />
+//       <Counter />
+//       <UserForm />
+//       <HoverMessage />
+//       <KeyPress />
+//     </div>
+//   )
+// }
+
+// export default App;
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
-      <h1>Event Handling Demo</h1>
-      <NameInput />
-      <Counter />
-      <UserForm />
-      <HoverMessage />
-      <KeyPress />
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
-
 
 
 
