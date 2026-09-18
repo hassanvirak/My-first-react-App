@@ -297,26 +297,75 @@
 
 // export default App;
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Navbar from "./components/Navbar";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
-  );
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/contact" element={<Contact />} />
+        
+       
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+
+//For One Card:
+// import StyleCard from "./components/StyleCard"
+
+// function App(){
+//     return (
+//         <div>
+
+//             <h1>React Inline Styling Example</h1>
+
+//             <StyleCard
+//                 title = "React Inline Styles"
+//                 description="This card is styled using inline CSS in React"/>
+//         </div>
+//     )
+// }
+// export default App
+
+
+// For infobox
+import InfoBox from "./components/InfoBox";
+
+function App(){
+    return(
+        <div>
+            <h1>React CSS Modules Example</h1>
+
+            <InfoBox
+                title="CSS Module"
+                message="This component is styles using CSS Modules"
+            />
+
+            <InfoBox
+                title="Scoped Styling"
+                message="This styles only apply to this component"
+            />
+
+            <InfoBox
+                title="Best Practices"
+                message="CSS Modules help avoid class name conflicts"
+            />
+        </div>
+    )
 }
 
-export default App;
+export default App
 
 
 
